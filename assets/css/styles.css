@@ -1,0 +1,57 @@
+h1, p {
+  text-align: center;
+  color: black;
+  font-family: Open Sans;
+  
+}
+body {
+  background-color: peachpuff;
+  width: 100%; 
+  margin: 0;
+  font-family: tahoma;
+}
+ 
+form {
+  width: 30vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border:none;
+  padding: 1rem 0;
+  border-bottom: 3px solid #ffffff;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0; 
+}
+
+input:not([type="checkbox"]):not([type="radio"]),textarea,
+select {
+  margin: 10px 0 0 0;
+  width:100%;
+  min-height: 2em; 
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: grey;
+  border-color: black;
+  min-width: 300px;
+}
+.radio {
+  display: flex;
+}
+input[type="submit"]:hover {
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+
+
+
