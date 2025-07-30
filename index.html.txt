@@ -1,0 +1,126 @@
+** start of index.html **
+
+<!DOCTYPE HTML>
+  <html lang="en" >
+   <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="assets/css/styles.css">
+    <title>survey form</title>
+    </head>
+    <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">appreciate your time for filling this up</p>
+  <form id="survey-form">
+ <fieldset>
+  <label id="name-label"      for="name">Name:<input type="text" id="name" placeholder="enter your name" required>
+  <br>
+  <label for="email" 
+  id="email-label">Email:<input type="email" id="email" placeholder="enter your email"required/>
+  <br>
+<label for="age" id="number-label">Age:<input type="number" id="number" placeholder="enter your age" min="12" max="100"/>
+<br>
+</fieldset>
+<fieldset>
+<label for="dropdown">gender:</label>
+<select for="dropdown" id="dropdown">
+  <option value="">choose</option>
+  <option value=1>female</option>
+  <option value=2>male</option>
+  </select>
+  </fieldset>
+  <fieldset>
+    <fieldset>
+  <legend>Favourite Drinks:</legend>
+  <div class="radio">
+  <input type="radio" id="coffee" name="favourite-drink" value="coffee">
+  <label for="coffee">Coffee</label>
+ <input type="radio" id="juice" name="favourite-drink" value="juice">
+  <label for="juice">Juice</label>
+</div>
+</fieldset>
+<fieldset>
+
+  <legend>Favourite Animal:</legend>
+ <label>
+    <input type="checkbox" name="favourite-animal" value="dog"> Dog
+  </label>
+  <label>
+    <input type="checkbox" name="favourite-animal" value="cat"> Cat
+  </label>
+
+</fieldset>
+<label for="comments">Write any comment here:</label>
+<textarea id="comments"></textarea>
+</fieldset>
+<fieldset>
+<input type="submit" id="submit"</input>
+  </fieldset>
+  </body>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+h1, p {
+  text-align: center;
+  color: black;
+  font-family: Open Sans;
+  
+}
+body {
+  background-color: peachpuff;
+  width: 100%; 
+  margin: 0;
+  font-family: tahoma;
+}
+ 
+form {
+  width: 30vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border:none;
+  padding: 1rem 0;
+  border-bottom: 3px solid #ffffff;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0; 
+}
+
+input:not([type="checkbox"]):not([type="radio"]),textarea,
+select {
+  margin: 10px 0 0 0;
+  width:100%;
+  min-height: 2em; 
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: grey;
+  border-color: black;
+  min-width: 300px;
+}
+.radio {
+  display: flex;
+}
+input[type="submit"]:hover {
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+
+
+
+
+
+
+** end of styles.css **
+
